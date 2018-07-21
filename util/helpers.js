@@ -73,7 +73,7 @@ function afterEachExample(done) {
 
 function makeSuite(desc, cb) {
     test.describe(desc, function() {
-    	this.timeout(60000);
+    	this.timeout(120000);
         setSauceEnv();
         test.beforeEach(beforeEachExample);
         cb();

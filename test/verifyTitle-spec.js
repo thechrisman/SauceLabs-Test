@@ -2,13 +2,13 @@ var assert = require('assert'),
     webdriver = require('selenium-webdriver'),
     makeSuite = require('../util/helpers').makeSuite;
 
-makeSuite('Go to NFL.com', function() {
+makeSuite('Go to SkyLifeSouthLake.com', function() {
 
-  it('should go to NFL.com', function(done) {
-    driver.get('http://www.nfl.com/');
+  it('should go to SkyLifeSouthLake.com', function(done) {
+    driver.get('http://skylifesouthlake.com/');
 
     driver.getTitle().then(function(title) {
-      assert.equal(title,'NFL.com - Official Site of the National Football League');
+      assert.equal(title,'Template - SkyLife');
       done();
     });
   });
